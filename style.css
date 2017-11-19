@@ -1,9 +1,9 @@
-#body{
+#body {
     background:black;
     font-family: arial;
 }
 
-.bg{
+.bg {
     position: fixed;
     background-image: url(blackback.jpg);
     background-size: cover;
@@ -15,7 +15,7 @@
     top:0;
 }
 
-.card{
+.card {
     width: 1024px;
     position: relative;
     margin: 20px auto;
@@ -24,13 +24,16 @@
     overflow: hidden;
 }
 
-.topnav{
-    background-color: black;
-    overflow: hidden;
-    margin-top: -4px;
+.top-img {
+    height: 300px;
 }
 
-.topnav a{
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -41,10 +44,14 @@
 }
 
 .topnav a:hover {
-    background-color: #333333;
+    background-color: #303030;
 }
 
-h1{
+.topnav a:active {
+    background-color: #383838;
+}
+
+h1 {
     font-size: 40px;
     text-transform: uppercase;
 }
@@ -53,7 +60,6 @@ h2 {
     text-transform: uppercase;
     font-size: 32px;
     font-weight: normal;
-    margin-top: -20px
 }
 
 h3 {
@@ -61,9 +67,10 @@ h3 {
     font-size: 24px;
     font-weight: normal;
     padding-top: 40px;
+    margin-top: 0px;
 }
 
-.logo{
+.logo {
     position: fixed;
     left: 40px;
     top: 40px;
@@ -83,7 +90,7 @@ h3 {
       border: none;
   }
 
-.woof{
+.woof {
     position: relative;
     margin: 0 auto;
 }
@@ -91,21 +98,35 @@ h3 {
 .greetings {
     position: relative;
     padding-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.greetings p {
+  margin-bottom: 5px;
+}
+
+.new-dog::after {
+    content: "NEW!";
+    color: white;
+    background-color: orange;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 30%;
+    position: absolute;
+    border-radius: 5px;
 }
 
 .paw {
-    margin-top: -10px;
+    margin-bottom: 25px;
 }
 
 .table-bg {
     background-color: #ececec;
     padding-bottom: 40px;
-    margin-top: -44px;
-    position: relative;
 }
 
-.myTable{
+.myTable {
+    border-spacing: 0;
     position: relative;
     margin: 0 auto;
     text-align: left;
@@ -115,7 +136,7 @@ h3 {
     width: 960px;
 }
 
-.myTable th {
+.table-head th {
     background-color: black;
     color: white;
     padding: 10px;
@@ -129,7 +150,11 @@ h3 {
     border-right: 1px solid #acacac;
 }
 
-.myTable tr:hover{
+.myTable tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.myTable tr:hover {
     background-color: #e0e0e0;
 }
 
@@ -142,24 +167,27 @@ h3 {
     border-right: 1px solid #acacac;
 }
 
-.social{
+.social {
     position: relative;
-    margin-top: -28px;
     padding-bottom: 30px;
 }
 
 .social-icon {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    opacity: 0.9;
+}
+
+.social-icon:active {
+    opacity: 0.7;
 }
 
 .social-icon img {
     width: 50px;
     height: 50px;
     border: none;
-}
-
-.social-icon img:hover {
-    opacity: 0.8;
 }
 
 .small-text {
