@@ -24,16 +24,21 @@
     overflow: hidden;
 }
 
-.top-img {
+.topimage {
     height: 300px;
 }
 
-.topnav {
+.topimage__pic {
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav {
     background-color: black;
     overflow: hidden;
 }
 
-.topnav a {
+.nav__link {
     display: inline-block;
     color: white;
     text-align: center;
@@ -43,26 +48,26 @@
     text-transform: uppercase;
 }
 
-.topnav a:hover {
+.nav__link:hover {
     background-color: #303030;
 }
 
-.topnav a:active {
+.nav__link:active {
     background-color: #383838;
 }
 
-h1 {
+.title--big {
     font-size: 40px;
     text-transform: uppercase;
 }
 
-h2 {
+.title--medium {
     text-transform: uppercase;
     font-size: 32px;
     font-weight: normal;
 }
 
-h3 {
+.title--small {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
@@ -70,7 +75,7 @@ h3 {
     margin-top: 0px;
 }
 
-.logo {
+.wblogo {
     position: fixed;
     left: 40px;
     top: 40px;
@@ -80,7 +85,7 @@ h3 {
     height:70px;
 }
 
-  .logo img {
+  .wblogo__pic {
       position: absolute;
       margin: 0 auto;
       top: 0;
@@ -90,22 +95,17 @@ h3 {
       border: none;
   }
 
-.woof {
-    position: relative;
-    margin: 0 auto;
-}
-
 .greetings {
     position: relative;
     padding-bottom: 40px;
     margin-top: 40px;
 }
 
-.greetings p {
+.text--medium {
   margin-bottom: 5px;
 }
 
-.new-dog::after {
+.title--NEW::after {
     content: "NEW!";
     color: white;
     background-color: orange;
@@ -116,16 +116,16 @@ h3 {
     border-radius: 5px;
 }
 
-.paw {
+.divider {
     margin-bottom: 25px;
 }
 
-.table-bg {
+.bg-block--grey {
     background-color: #ececec;
     padding-bottom: 40px;
 }
 
-.myTable {
+.table {
     border-spacing: 0;
     position: relative;
     margin: 0 auto;
@@ -136,33 +136,33 @@ h3 {
     width: 960px;
 }
 
-.table-head th {
+.table__row--top {
     background-color: black;
     color: white;
     padding: 10px;
-    font-weight: normal;
-    text-transform: uppercase;
   }
 
-.myTable tr {
+.table__cell--top {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.table__row--regular {
     background-color: white;
     border-bottom: 1px solid #acacac;
     border-right: 1px solid #acacac;
 }
 
-.myTable tr:nth-child(even) {
+.table__row--regular:nth-child(even) {
     background-color: #f3f3f3;
 }
 
-.myTable tr:hover {
+.table__row--regular:hover {
     background-color: #e0e0e0;
 }
 
-.myTable tr td {
+.table__cell {
     padding: 10px 10px;
-}
-
-.myTable td {
     border-bottom: 1px solid #acacac;
     border-right: 1px solid #acacac;
 }
@@ -172,24 +172,77 @@ h3 {
     padding-bottom: 30px;
 }
 
-.social-icon {
+.icon-area__icon {
     text-decoration: none;
 }
 
-.social-icon:hover {
+.icon-area__icon:hover {
     opacity: 0.9;
 }
 
-.social-icon:active {
+.icon-area__icon:active {
     opacity: 0.7;
 }
 
-.social-icon img {
+.icon-area__pic {
     width: 50px;
     height: 50px;
     border: none;
 }
 
-.small-text {
+.text--small {
     font-size: 10px
+}
+
+.message-form {
+   width: 400px;
+   margin: 0 auto;
+}
+
+.message-form__input {
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #acacac
+}
+
+.message-form__input--big {
+    min-height: 80px;
+    max-height: 120px;
+    width: 400px;
+}
+
+.message-form__field {
+    text-align: left;
+}
+
+.message-form__field--second {
+    margin-top: 20px;
+}
+
+.text--forform {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.message-form__button--normal {
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 144px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.message-form__button--normal:hover {
+  color: black;
+  background-color: orange;
+}
+
+.message-form__button--normal:active {
+  background-color: red;
 }

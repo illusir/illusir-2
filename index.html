@@ -13,78 +13,106 @@
 <body id="body">
   <div class="bg"></div>
   <div class="card" >
-    <div  class="top-img">
-      <img class="woof" src="doggy.jpg" alt="doggy-picture" />
+    <div  class="topimage">
+      <img class="topimage__pic" src="doggy.jpg" alt="doggy-picture" />
     </div>
-    <div class="topnav">
-      <a href="https://en.wikipedia.org/wiki/Dog">My Bros</a>
-      <a href="https://weblime.ru">Awesome Guys &hearts;</a>
-      <a href="http://edu.weblime.ru">Learn 2 Code</a>
+    <div class="nav">
+      <a class="nav__link" href="https://en.wikipedia.org/wiki/Dog">My Bros</a>
+      <a class="nav__link" href="https://weblime.ru">Awesome Guys &hearts;</a>
+      <a class="nav__link" href="http://edu.weblime.ru">Learn 2 Code</a>
     </div>
-      <a class="logo" href="https://weblime.ru" target="_blank">
-      <img src="weblime.png" alt="weblime" title="weblime" />
+      <a class="wblogo" href="https://weblime.ru" target="_blank">
+        <img class="wblogo__pic" src="weblime.png" alt="weblime" title="weblime" />
       </a>
     <div class="greetings">
-      <h1>Bark!</h1>
-      <h2  class="new-dog">New dog in the town!</h2>
-      <div class="paw">
-        <img src="paw.svg"  style="width:30px" alt="paw" title="paw">
+      <h1 class="title title--big">Bark!</h1>
+      <h2 class="title title--medium title--NEW">New dog in the town!</h2>
+      <div class="divider">
+        <img class="divider__pic" src="paw.svg"  style="width:30px" alt="paw" title="paw">
       </div>
-      <p>Fascinating, isn't it?</p>
+      <p class="text text--medium">Fascinating, isn't it?</p>
     </div>
-    <div class="table-bg">
-      <h3>So... Here's my typical activities</h3>
-      <table class="myTable">
-        <tr class="table-head">
-          <th>Time</th>
-          <th>Place</th>
-          <th>Occupation</th>
-          <th>Result</th>
+    <div class="bg-block bg-block--grey">
+      <h3 class="title title--small">So... Here's my typical activities</h3>
+      <table class="table">
+        <tr class="table__row table__row--top">
+          <th class="table__cell table__cell--top">Time</th>
+          <th class="table__cell table__cell--top">Place</th>
+          <th class="table__cell table__cell--top">Occupation</th>
+          <th class="table__cell table__cell--top">Result</th>
         </tr>
-        <tr>
-          <td>3:30</td>
-          <td>Bedroom</td>
-          <td>Sleeping</td>
-          <td>I'm hungry</td>
+        <tr class="table__row table__row--regular">
+          <td class="table__cell">3:30</td>
+          <td class="table__cell">Bedroom</td>
+          <td class="table__cell">Sleeping</td>
+          <td class="table__cell">I'm hungry</td>
         </tr>
-        <tr>
-          <td>07:00</td>
-          <td>Kitchen</td>
-          <td>Asking for food</td>
-          <td>I'm full, my human is late for work as usual</td>
+        <tr class="table__row table__row--regular">
+          <td class="table__cell">07:00</td>
+          <td class="table__cell">Kitchen</td>
+          <td class="table__cell">Asking for food</td>
+          <td class="table__cell">I'm full, my human is late for work as usual</td>
         </tr>
-        <tr>
-          <td>19:00</td>
-          <td>Street</td>
-          <td>Chasing cars</td>
-          <td>Time to see a vet</td>
+        <tr class="table__row table__row--regular">
+          <td class="table__cell">19:00</td>
+          <td class="table__cell">Street</td>
+          <td class="table__cell">Chasing cars</td>
+          <td class="table__cell">Time to see a vet</td>
         </tr>
-        <tr>
-          <td>20:00</td>
-          <td>Study</td>
-          <td>Playing with my human</td>
-          <td>Human didn't notice I ruined our car</td>
+        <tr class="table__row table__row--regular">
+          <td class="table__cell">20:00</td>
+          <td class="table__cell">Study</td>
+          <td class="table__cell">Playing with my human</td>
+          <td  class="table__cell">Human didn't notice I ruined our car</td>
         </tr>
-        <tr>
-          <td>00:00</td>
-          <td>My place</td>
-          <td>Howling</td>
-          <td>Human is angry!</td>
+        <tr class="table__row table__row--regular">
+          <td class="table__cell">00:00</td>
+          <td class="table__cell">My place</td>
+          <td class="table__cell">Howling</td>
+          <td class="table__cell">Human is angry!</td>
         </tr>
       </table>
     </div>
     <div class="social">
-        <h3>Let's get social?</h3>
-        <a class="social-icon" target="_blank" href="https://facebook.com">
-          <img src="facebook.svg" alt="facebook" title="facebook" />
-        </a>
-        <a class="social-icon" target="_blank" href="https://twitter.com">
-          <img src="twitter.svg" alt="twitter" title="twitter" />
-        </a>
-        <a class="social-icon" target="_blank" href="https://twitter.com">
-          <img src="instagram.svg" alt="instagram" title="instagram" />
-        </a>
-        <p class="small-text">Just kidding, those are not mine :P</p>
+        <h3 class="title title--small">Let's get social?</h3>
+        <div class="icon-area">
+          <a class="icon-area__icon" target="_blank" href="https://facebook.com">
+            <img class="icon-area__pic" src="facebook.svg" alt="facebook" title="facebook" />
+          </a>
+          <a class="icon-area__icon" target="_blank" href="https://twitter.com">
+            <img class="icon-area__pic" src="twitter.svg" alt="twitter" title="twitter" />
+          </a>
+          <a class="icon-area__icon" target="_blank" href="https://twitter.com">
+            <img class="icon-area__pic" src="instagram.svg" alt="instagram" title="instagram" />
+          </a>
+        </div>
+        <p class="text text--small">Just kidding, those are not mine :P</p>
+    </div>
+    <div class="bg-block bg-block--grey">
+      <h3 class="title title--small">Drop me a message!</h3>
+      <form class="message-form" name="doggy-form" method="post" enctype="application/x-www-form-urlencoded">
+        <div class="message-form__field message-form__field--first">
+          <p class="text text--forform">
+            <label for="form-name">
+            Name or nickname (required)
+            </label>
+          </p>
+          <input type="text" name="name" placeholder="Name or nickname" id="form-name" class="message-form__input" required>
+        </div>
+        <div class="message-form__field message-form__field--second">
+          <p class="text text--forform">
+          <label for="form-message">
+            Message (required)
+          </label>
+          </p>
+          <textarea name="message" placeholder="Message" id="form-message" class="message-form__input message-form__input--big" required>
+          </textarea>
+        </div>
+        <p>
+          <button type="submit" name="button" value="Send" class="message-form__button message-form__button--normal">
+            Send
+          </button>
+      </form>
     </div>
   </div>
 </body>
